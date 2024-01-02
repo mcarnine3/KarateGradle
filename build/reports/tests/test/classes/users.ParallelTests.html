@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ParallelTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ParallelTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/users.html">users</a> &gt; ParallelTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.397s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testParallel()</td>
+<td class="success">3.397s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:11:11.972 [Test worker] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:11:11.978 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build/karate-reports' dir to: build/karate-reports_1704222671977
+13:11:12.046 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-8&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.058 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72.5&amp;formatted=true&amp;lat=4.2&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.066 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=4&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.069 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=0&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.439 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 387
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 06:45&quot;,
+  &quot;lng&quot;: -8,
+  &quot;countryCode&quot;: &quot;CI&quot;,
+  &quot;gmtOffset&quot;: 0,
+  &quot;rawOffset&quot;: 0,
+  &quot;sunset&quot;: &quot;2024-01-02 18:25&quot;,
+  &quot;timezoneId&quot;: &quot;Africa/Abidjan&quot;,
+  &quot;dstOffset&quot;: 0,
+  &quot;countryName&quot;: &quot;Ivory Coast&quot;,
+  &quot;time&quot;: &quot;2024-01-02 19:11&quot;,
+  &quot;lat&quot;: 8
+}
+
+13:11:12.447 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 381
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 05:54&quot;,
+  &quot;lng&quot;: -72,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2024-01-02 17:48&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2024-01-02 14:11&quot;,
+  &quot;lat&quot;: 4
+}
+
+13:11:12.449 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 391
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 05:57&quot;,
+  &quot;lng&quot;: -72.5,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2024-01-02 17:50&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2024-01-02 14:11&quot;,
+  &quot;lat&quot;: 4.2
+}
+
+13:11:12.457 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-8f&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.459 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 390
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 05:48&quot;,
+  &quot;lng&quot;: -72,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2024-01-02 17:55&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2024-01-02 14:11&quot;,
+  &quot;lat&quot;: 0
+}
+
+13:11:12.469 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-74&amp;formatted=true&amp;lat=4&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.470 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=80&amp;formatted=true&amp;lat=-75&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.471 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-72&amp;formatted=true&amp;lat=%C3%B1&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.899 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 427
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:12.899 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 442
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 06:45&quot;,
+  &quot;lng&quot;: -8,
+  &quot;countryCode&quot;: &quot;CI&quot;,
+  &quot;gmtOffset&quot;: 0,
+  &quot;rawOffset&quot;: 0,
+  &quot;sunset&quot;: &quot;2024-01-02 18:25&quot;,
+  &quot;timezoneId&quot;: &quot;Africa/Abidjan&quot;,
+  &quot;dstOffset&quot;: 0,
+  &quot;countryName&quot;: &quot;Ivory Coast&quot;,
+  &quot;time&quot;: &quot;2024-01-02 19:11&quot;,
+  &quot;lat&quot;: 8
+}
+
+13:11:12.899 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 429
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;sunrise&quot;: &quot;2024-01-02 06:02&quot;,
+  &quot;lng&quot;: -74,
+  &quot;countryCode&quot;: &quot;CO&quot;,
+  &quot;gmtOffset&quot;: -5,
+  &quot;rawOffset&quot;: -5,
+  &quot;sunset&quot;: &quot;2024-01-02 17:56&quot;,
+  &quot;timezoneId&quot;: &quot;America/Bogota&quot;,
+  &quot;dstOffset&quot;: -5,
+  &quot;countryName&quot;: &quot;Colombia&quot;,
+  &quot;time&quot;: &quot;2024-01-02 14:11&quot;,
+  &quot;lat&quot;: 4
+}
+
+13:11:12.903 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 432
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:12 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json;charset=UTF-8
+{
+  &quot;lng&quot;: 80,
+  &quot;countryCode&quot;: &quot;AQ&quot;,
+  &quot;gmtOffset&quot;: 7,
+  &quot;rawOffset&quot;: 7,
+  &quot;timezoneId&quot;: &quot;Antarctica/Davis&quot;,
+  &quot;dstOffset&quot;: 7,
+  &quot;countryName&quot;: &quot;Antarctica&quot;,
+  &quot;time&quot;: &quot;2024-01-03 02:11&quot;,
+  &quot;lat&quot;: -75
+}
+
+13:11:12.933 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-5&amp;formatted=true&amp;lat=.&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.937 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=a&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.939 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=-a8f&amp;formatted=true&amp;lat=8&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:12.941 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=aas&amp;formatted=true&amp;lat=%25%26%24&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:13.308 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 375
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:13.308 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 369
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:13.308 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 367
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:13.308 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 371
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 69
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;error parsing parameter&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:13.338 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=70&amp;formatted=true&amp;lat=90&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:13.345 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=801&amp;formatted=true&amp;lat=700&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:13.346 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=901&amp;formatted=true&amp;lat=81&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:13.347 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; GET http://api.geonames.org/timezoneJSON?lng=99&amp;formatted=true&amp;lat=90&amp;username=karate
+1 &gt; Host: api.geonames.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.14.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:11:13.818 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 478
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 87
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,
+  &quot;value&quot;: 15
+}}
+
+13:11:13.818 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 468
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 87
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;no timezone information found for lat/lng&quot;,
+  &quot;value&quot;: 15
+}}
+
+13:11:13.820 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 472
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 61
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;invalid lat/lng&quot;,
+  &quot;value&quot;: 14
+}}
+
+13:11:13.818 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 468
+1 &lt; 200
+1 &lt; Date: Tue, 02 Jan 2024 19:11:13 GMT
+1 &lt; Server: Apache/2.4.6 (CentOS) mod_jk/1.2.41 OpenSSL/1.0.1e-fips PHP/5.4.16
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Frame-Options: sameorigin
+1 &lt; Cache-Control: no-cache
+1 &lt; Content-Length: 61
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+{&quot;status&quot;: {
+  &quot;message&quot;: &quot;invalid lat/lng&quot;,
+  &quot;value&quot;: 14
+}}
+
+---------------------------------------------------------
+feature: classpath:geonames/get/geographical-data-get.feature
+scenarios: 16 | passed: 16 | failed:  0 | time: 6.9072
+---------------------------------------------------------
+
+13:11:14.169 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 1 of 1 (0 remaining) classpath:geonames/get/geographical-data-get.feature
+Karate version: 1.3.1
+======================================================
+elapsed:   2.36 | threads:    4 | thread time: 6.91 
+features:     1 | skipped:    0 | efficiency: 0.73
+scenarios:   16 | passed:    16 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.3.1
+file:///home/mcarnine/dev/KarateGradle/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jan 02, 2024 1:11:14 PM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File '/home/mcarnine/dev/KarateGradle/build/karate-reports/geonames.get.geographical-data-get.json' contains 1 feature(s)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jan 2, 2024, 1:11:17 PM</p>
+</div>
+</div>
+</body>
+</html>

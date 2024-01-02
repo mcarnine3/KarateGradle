@@ -1,0 +1,33 @@
+KARATE
+
+Código de respuesta:
+200 - get - obtener
+201 - post - crear
+204 - delete - eliminar
+200 - put - actualizar
+
+Mapear paths: https://jsonpath.com
+$.name - Busca nombre
+
+https://github.com/karatelabs/karate
+https://github.com/karatelabs/karate#fuzzy-matching
+
+Pasos Gradle:
+1. Ingresar al archivo build.gradle para configurar
+2. Crear el package en la carpeta test
+3. Crear karate-config.js por ambiente
+	Definir los timeout de conección y lectura
+	Definir la url y usuario
+4. Crear logback-test para limpiar la consola
+5. Crear el feature
+	Definir el background (url, path, params y definir variables para json)
+6. Crear el runner
+	Definir el feature que ejecutará
+	Tiene que tener el mismo nombre del feature
+	Tiene que tener el mismo nivel de carpeta
+7. Crear los archivos .json para comparar
+	Definir los campos opcionales
+8. Ejecutar desde cmd las variables en otros ambientes
+	Ejecutar gradle test --tests ParallelTests -Dkarate.env=preproductive -Duser=karate -DBaseUrl=http://api.geonames.org/ -i
+
+./gradlew test --tests ParallelTests -Denv=preproductive -Duser=karate -DbaseUrl=http://api.geonames.org/ -i
